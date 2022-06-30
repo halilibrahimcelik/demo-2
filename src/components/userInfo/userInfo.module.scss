@@ -1,0 +1,43 @@
+$Btn-color: #FF4858;
+$Bg-color: #acd4f3;
+$BgCard-color:rgb(206, 206, 206);
+$Text-color: #f5fcfc;
+$BgWarning-color:#8d111b;
+.UserInfo{
+
+    background-color: $BgCard-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding:1rem;
+    border-radius: 9px;
+    gap:0.2rem;
+    transition: all 1s ease;
+
+    h5{
+        color:$Btn-color;
+        font-weight: 800;
+    }
+    p{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+    button{
+        width: max-content;
+      
+        padding: 0.5rem 0.9rem;
+    
+        opacity: 1;
+        outline: none;
+        border: none;
+        border-radius: 9px;
+        background-color:$BgWarning-color;
+        color:white;
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        &:hover{
+            opacity: 0.8;
+        }
+     }
+}
